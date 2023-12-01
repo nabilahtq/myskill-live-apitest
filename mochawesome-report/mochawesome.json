@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-01T10:29:02.878Z",
+    "end": "2023-12-01T10:29:04.403Z",
+    "duration": 1525,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "27e7b9c4-1ccb-445b-b1e1-d27c831be5a0",
+      "title": "",
+      "fullFile": "C:\\Users\\NABILAH\\OneDrive\\Dokumen\\myskill qa\\myskill-live-apitest\\test\\api\\chaiAssert.js",
+      "file": "\\test\\api\\chaiAssert.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b88e8d23-04d4-46b3-86d1-667af6788536",
+          "title": "Post Request Example",
+          "fullFile": "C:\\Users\\NABILAH\\OneDrive\\Dokumen\\myskill qa\\myskill-live-apitest\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "reponse status equal to 200",
+              "fullTitle": "Post Request Example reponse status equal to 200",
+              "timedOut": false,
+              "duration": 1510,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Check respone status harus sama dengan 200\nexpect((await response).status).to.equal(200)",
+              "err": {
+                "message": "AssertionError: expected 415 to equal 200",
+                "estack": "AssertionError: expected 415 to equal 200\n    at Context.<anonymous> (test\\api\\chaiAssert.js:12:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": "- 415\n+ 200\n"
+              },
+              "uuid": "a02de58f-017a-43e5-97b9-9398326e1e9a",
+              "parentUUID": "b88e8d23-04d4-46b3-86d1-667af6788536",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "reponse body to haveOwnProperty",
+              "fullTitle": "Post Request Example reponse body to haveOwnProperty",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Expect dalam body response terdapat value message\nexpect((await response).body).to.haveOwnProperty('message')",
+              "err": {},
+              "uuid": "8ba1b198-c51e-48b2-a732-3bbc85d799b0",
+              "parentUUID": "b88e8d23-04d4-46b3-86d1-667af6788536",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8ba1b198-c51e-48b2-a732-3bbc85d799b0"
+          ],
+          "failures": [
+            "a02de58f-017a-43e5-97b9-9398326e1e9a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1511,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
